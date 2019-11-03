@@ -39,6 +39,10 @@ for /f "tokens=1*" %%V in ('dir /b /a:d "%SCRIPT_PKG_DIR%"') do (
         REM we can update the product ...
         if "!version:~1,-1!" LSS "!LastVersion:~1!" (
             echo     An update is available : !LastVersion!
+            set /P UpdatePackage=Would you like to upgrade this package ? [y/n] :
+            if /I "!UpdatePackage!" EQU "Y" (
+                call %SCRIPT_ROOT_DIR%\rpm.bat install !Package!
+            ) 
         ) else (
             echo     The package is already up to date
         )

@@ -13,8 +13,8 @@ set PKG_CODE=rpm-core
 REM -----
 
 REM We need to remove all the files installed previously ...
-set FilesToDel=%SCRIPT_DIR%list.bat %SCRIPT_DIR%apply.bat %SCRIPT_DIR%update.bat %SCRIPT_DIR%utils\buildshct.bat
-set FilesToDel=%FilesToDel% %SCRIPT_LOG_DIR%deploy_%PKG_CODE%.log
+set FilesToDel=%SCRIPT_DIR%apply.bat %SCRIPT_DIR%list.bat %SCRIPT_DIR%update.bat %SCRIPT_DIR%utils\buildshct.bat
+set FilesToDel=%FilesToDel% %SCRIPT_LOG_DIR%deploy_%PKG_CODE%.log %SCRIPT_LOG_DIR%dl_%PKG_CODE%.log
 for %%f in (%FilesToDel%) do (
     if exist %%f ( del /s /f /q %%f > nul )
 )
