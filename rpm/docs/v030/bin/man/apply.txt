@@ -1,0 +1,19 @@
+rpm apply
+RPM's command to apply install, uninstall and 
+reboot commands.
+---
+ 
+USAGE
+rpm apply <deployment>
+   <deployment> : The file's path of the resource that
+                  contains all the actions to apply :
+                  installation, uninstallation and potentially
+                  the reboot of the computer.
+ 
+DESCRIPTION
+This command will apply all the commands written in the
+file to install and uninstall the wanted  packages and 
+potentially reboot the computer. 
+ 
+This command will use the "install" and "uninstall" 
+commands of the RPM's application.

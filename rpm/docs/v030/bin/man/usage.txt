@@ -1,0 +1,15 @@
+rpm usage
+RPM's command to get help on the RPM's tool.
+---
+ 
+USAGE
+rpm usage [<action>]
+   <action> : An optional parameter to indicate for which
+              command the user wants some help.
+ 
+DESCRIPTION
+This command will list all the available functions to the
+user if the <action> parameter isn't set. Overwise, it'll
+return, if possible, the documentation linked to the wanted
+command by using the file with the same name in the "man/"
+directory.

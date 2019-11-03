@@ -1,0 +1,11 @@
+rpm list
+RPM's command to list the installed packages.
+---
+ 
+USAGE
+rpm list
+ 
+DESCRIPTION
+This command will list all the installed packages on
+this computer. It'll return the package's code and the 
+version.

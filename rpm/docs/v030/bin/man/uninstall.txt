@@ -1,0 +1,15 @@
+rpm uninstall
+RPM's command to uninstall a package.
+---
+ 
+USAGE
+rpm uninstall <package>
+   <package> : The package's unique code, made of 
+               two parts separated by a "/" character. 
+               Sample : rpm/core.
+ 
+DESCRIPTION
+This command will uninstall the wanted package of this 
+computer. To remove the product, the RPM's application
+will apply the "uninstall.rpm.bat" script of the resource.
+If it's not available, it'll remove the directory.

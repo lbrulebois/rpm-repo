@@ -1,0 +1,20 @@
+rpm install
+RPM's command to install a package.
+---
+ 
+USAGE
+rpm install <package>
+   <package> : The package's unique code, made of 
+               two parts separated by a "/" character. 
+               Sample : rpm/core.
+ 
+DESCRIPTION
+This command will install the wanted package on this 
+computer. If an existent version of this product is 
+installed locally, it'll try to uninstall it before
+downloading the last version and install it by using 
+the "install.rpm.bat" script.
+ 
+To check the existence of the package and download it,
+the "REPOSITORY" parameter must be setted with an existing
+address in the config.ini of the RPM's application.

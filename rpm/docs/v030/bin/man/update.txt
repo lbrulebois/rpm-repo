@@ -1,0 +1,9 @@
+rpm update
+RPM's command to update the installed packages.
+---
+ 
+USAGE
+rpm update
+ 
+DESCRIPTION
+...
